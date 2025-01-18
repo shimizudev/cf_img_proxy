@@ -1,0 +1,20 @@
+{
+  "name": "cf_img_proxy",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@types/bun": "latest",
+    "wrangler": "^3.103.2"
+  },
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^4.6.17"
+  }
+}
